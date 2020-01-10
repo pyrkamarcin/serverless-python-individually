@@ -296,11 +296,11 @@ pip3 install -U virtualenv && ${runPy}
         const runtime = funcRuntime || this.serverless.service.provider.runtime;
         if (runtime === "python3.6") {
           return ['docker', 'run', '-v', process.cwd() + ':/var/task',
-            'lambci/lambda:build-' + runtime, 'bash',
+            'jetalone/lambda:build-' + runtime, 'bash',
             Path.posix.join(dir, libDir, '_install.sh')];
         } else {
           return ['docker', 'run', '-v', process.cwd() + ':/var/task',
-            'lambci/lambda:build-' + runtime, 'python',
+            'jetalone/lambda:build-' + runtime, 'python',
             Path.posix.join(dir, libDir, '_requirements.py'),
             Path.posix.join(dir, 'requirements.txt'),
             Path.posix.join(dir, libDir)];
