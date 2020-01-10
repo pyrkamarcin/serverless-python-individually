@@ -340,7 +340,7 @@ pip3 install -U virtualenv && ${runPy}
       const userInfo = os.userInfo();
       const runtime = funcRuntime || this.serverless.service.provider.runtime;
       return ['docker', 'run', '-v', process.cwd() + ':/var/task',
-        'lambci/lambda:build-' + runtime, 'bash', '-c',
+        'jetalone/lambda:build-' + runtime, 'bash', '-c',
         'chown -R ' + userInfo.uid + ':' + userInfo.gid + ' ' + dir];
     })();
 

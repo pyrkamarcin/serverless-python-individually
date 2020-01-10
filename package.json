@@ -1,15 +1,15 @@
 {
-  "name": "serverless-python-individually",
+  "name": "serverless-python-individually-psycopg2",
   "version": "0.1.9",
   "engines": {
     "node": ">=4.0"
   },
-  "description": "Serverless Python Packaging Plugin",
-  "author": "Chifeng Chou",
+  "description": "Serverless Python Packaging Plugin with psycopg2",
+  "author": "Marcin Pyrka",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cfchou/serverless-python-individually"
+    "url": "https://github.com/pyrkamarcin/serverless-python-individually"
   },
   "keywords": [
     "serverless",
@@ -21,7 +21,8 @@
     "amazon web services",
     "python",
     "docker-lambda",
-    "serverless.com"
+    "serverless.com",
+    "psycopg2"
   ],
   "files": [
     "index.js",
